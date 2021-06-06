@@ -19,3 +19,6 @@ Non-Functional Requirements:
 Extended Requirements:
 1.	Analytics; e.g., how many times a redirection happened?
 2.	Our service should also be accessible through REST APIs by other services.
+
+
+Need Redis Cache server in local to make this service work.
