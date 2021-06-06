@@ -1,0 +1,108 @@
+{
+	"id": "778666e7-9e79-6c5a-135f-4c21591db87d",
+	"name": "urlshortener",
+	"description": "",
+	"order": [
+		"acf58079-a62f-688f-8b7d-02b71ae45dc5",
+		"0156a9f6-9170-374a-e57f-a93fff26c94a",
+		"91f3074f-acb9-a111-c91e-6f98e54bb536"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1622872426157,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0156a9f6-9170-374a-e57f-a93fff26c94a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "778666e7-9e79-6c5a-135f-4c21591db87d",
+			"data": [],
+			"dataMode": "raw",
+			"name": "withoutcustomurl",
+			"description": "url shortener",
+			"descriptionFormat": "html",
+			"time": 1622872503927,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"url\" : \"www.facebook.com\",\n  \"timeLimit\" : \"6\"\n}"
+		},
+		{
+			"id": "91f3074f-acb9-a111-c91e-6f98e54bb536",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622872531997,
+			"name": "withouttimelimit",
+			"description": "url shortener",
+			"collectionId": "778666e7-9e79-6c5a-135f-4c21591db87d",
+			"responses": [],
+			"rawModeData": "{\n  \"url\" : \"www.facebook.com\"\n}"
+		},
+		{
+			"id": "acf58079-a62f-688f-8b7d-02b71ae45dc5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8080/create",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1622872467058,
+			"name": "localhost:8080/create",
+			"description": "url shortener",
+			"collectionId": "778666e7-9e79-6c5a-135f-4c21591db87d",
+			"responses": [],
+			"rawModeData": "{\n  \"url\" : \"www.facebook.com\",\n  \"timeLimit\" : \"6\",\n  \"customUrl\" :\"hello.com\"\n}"
+		}
+	]
+}
